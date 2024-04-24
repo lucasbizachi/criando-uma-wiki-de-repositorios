@@ -16,8 +16,18 @@ function App() {
     const {data} = await api.get(`repos/${currentRepo}`)
 
     if(data.id){
-      setRepos(prev => [...prev, data]);
+
+      const isExist = repos.find(repo => repo.id === data.id)
+
+      if(!isExist) {
+        setRepos(prev => [...prev, data]);
+        setCurrentRepo('')
+      return
+      }
+      
     }
+    alert('Repositório não encontrado')
+
   }
 
   return (
@@ -25,7 +35,7 @@ function App() {
       <img src={gitLogo} width={72} height={72} alt="GitHub Logo" />
       <Input value={currentRepo} onChange={(e) => setCurrentRepo(e.target.value)} />
       <Button onClick={handleSearchRepo}/>
-      {repos.map(repo => <ItemRepo />)}
+      {repos.map(repo => <ItemRepo repo={repo}/>)}
     </Container>
   );
 }
