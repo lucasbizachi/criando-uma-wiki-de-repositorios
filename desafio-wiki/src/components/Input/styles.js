@@ -12,6 +12,7 @@ export const InputContainer = styled.div`
 
     input {
         background: transparent;
+        outline: none;
         border:0;
         width: 90%;
         height: 62px;
@@ -20,4 +21,7 @@ export const InputContainer = styled.div`
         font-size: 20px;
     }
 
+    &:hover {
+        box-shadow: 0 0 15px #fff;
+    }
 `
