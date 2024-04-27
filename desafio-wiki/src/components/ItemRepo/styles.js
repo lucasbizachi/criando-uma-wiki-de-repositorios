@@ -15,10 +15,24 @@ export const ItemContainer = styled.div`
         margin-botton:20px;
     }
 
-    a.remover {
-        color:#FF0000;
+    a {
+        display: inline-block;
+        padding: 5px 10px;
+        border: 1px solid transparent;
+        border-radius: 5px;
         margin-top: 20px;
+        text-decoration: none;
     }
+
+    a.search {
+        border:1px solid #A8F8A7;
+        color: #A8F8A7;
+    }
+
+    a.remover {
+        border:1px solid #ff4040;
+        color:#ff4040;
+    }  
 
     hr {
         color:#FAFAFA60;
