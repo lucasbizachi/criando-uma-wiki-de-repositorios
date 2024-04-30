@@ -1,4 +1,5 @@
 # Criando uma wiki de repositórios GitHub
+![Captura de tela de 2024-04-30 08-42-12](https://github.com/lucasbizachi/criando-uma-wiki-de-repositorios/assets/101759223/a8dcae56-fd07-47c4-a32f-d80fd034edf6)
 Este diretório contém arquivos relacionados ao desenvolvimento de uma wiki para repositórios do GitHub, implementada usando a biblioteca React.
 
 ## Motivação para o uso do React.
